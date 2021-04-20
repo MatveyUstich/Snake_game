@@ -1,6 +1,6 @@
 from turtle import Screen
 from snake import Snake
-from time import sleep as delay
+import time
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -20,7 +20,7 @@ run = True
 
 while run:
     screen.update()
-    delay(0.1)
+    time.sleep(0.1)
     snake.move()
 
 screen.exitonclick()
